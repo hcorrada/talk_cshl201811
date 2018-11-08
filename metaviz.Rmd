@@ -154,12 +154,11 @@ https://github.com/epiviz/metaviz-data-provider
 
 ---
 layout: true
-exclude: true
+
 
 ## Metaviz for longitudinal designs
 
 ---
-exclude: true
 class:split-40
 
 .column[
@@ -172,7 +171,19 @@ class:split-40
 ]
 
 ---
-exclude: true
+class:split-40
+
+.column[
+  How can we effectively display longitudinal data characteristics  
+  
+  Sparkline Matrix
+]
+
+.column[
+.center.middle[.image-60[![](img/SparklineDemo.png)]]
+]
+
+---
 
 <!--.center.middle.image-70[![](img/SparklineDemo.png)]-->
 .center.middle.image-80[![](img/metaviz-longitudinal.gif)]
