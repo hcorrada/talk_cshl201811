@@ -1,0 +1,106 @@
+---
+params:
+  title: "What comes next? Beyond integration of visual and computational interactive data analysis"
+  author: "Héctor Corrada Bravo"
+  center: "Center for Bioinformatics and Computational Biology"
+  institution: "University of Maryland, College Park, USA"
+  venue: "CSHL Biological Data Science 2018"
+css: ["custom.css"]
+output: 
+  xaringan::moon_reader:
+    lib_dir: libs
+    seal: false
+    includes:
+      after_body: "custom.html"
+    nature:
+      ratio: "16:9"
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(cache=TRUE)
+
+pretty_today <- function() { pretty_date(Sys.Date()) }
+pretty_date <- function(date) {
+  format(date, "%d %B %Y") 
+}
+```
+
+class: title-slide, center, middle
+count: false
+
+.banner[![](epiviz.png)]
+
+.title[`r params$title`]
+
+.author[`r params$author`]  
+.other-info[@hcorrada]
+
+.other-info[
+`r params$center`  
+`r params$institution`  
+`r params$venue`, `r pretty_today()`
+]
+
+.logo[![](logo.png)]
+
+```{r, child="setup.Rmd"}
+```
+
+```{r, child="metaviz.Rmd"}
+```
+
+```{r, child="spline.Rmd"}
+```
+
+```{r, child="feed.Rmd"}
+```
+
+```{r, child="ida.Rmd"}
+```
+
+---
+
+layout: false
+
+## Summary
+
+### Exploration of hierarchical features (FacetZoom)
+
+--
+
+### Design for longitudinal experimental structure (SparklineMatrix)
+
+--
+
+### Interact with data and statistical model via visualization (`metavizr`)
+
+--
+
+### Design your tools with data reflection, build IDA tools around that
+
+---
+layout: false
+class: split-60
+
+## Acknowledgements
+
+.column[
+### **CBCB/UMD College Park**
+
+Justin Wagner, Joseph Paulson, Jayaram Kancherla, Florin Chelaru  
+Mihai Pop, Niklas Elmqvist, Zhe Cui, Mohamed Gunady, Stephen Mount
+
+### **UMD Baltimore**
+
+Brianna Lindsey, O. Colin Stine, Owen White, Anup Mahurkar
+]
+
+.column[
+### **Funding**
+
+NIH/NIGMS, Genentech
+
+### **More info**
+http://epiviz.org
+http://www.hcbravo.org
+]

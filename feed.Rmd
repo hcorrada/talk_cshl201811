@@ -1,0 +1,54 @@
+
+---
+layout: true
+
+## Statistically guided visualization
+
+---
+class: split-50
+
+.column[
+Let's revisit the Data Analysis modes
+
+How can we make the connection between two modes of 
+analysis tighter?
+]
+
+.column[
+.center.image-50[![](img/tukey.png)]
+]
+
+---
+class: split-50
+
+.column[
+One idea: statistically guided visual exploration via _proactive computation_
+
+Back to Epiviz: epigenetic regulation of gene expression across multiple tumor types (Timp et al. 2016)
+]
+
+.column[
+.center.image-50[![](img/feed.png)]
+]
+
+---
+class: split-50
+
+.column[
+One idea: statistically guided visual exploration via _proactive computation_
+
+Analysis runs in background (proactive computation)
+
+"Interesting results" presented to user, guides exploration of data underlying result.
+]
+
+.column[
+.center.image-50[![](img/feed.png)]
+]
+
+---
+
+.center.image-90[![](img/epiviz-feed2.gif)]
+
+
+
